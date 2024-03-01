@@ -63,3 +63,20 @@ body {
     font-weight: 600;
     letter-spacing: 0.1em;
 }
+
+.number {
+    position: absolute;
+    inset: 0;
+    rotate: 22.5deg;
+}
+
+.number b {
+    position: absolute;
+    inset: 10px;
+    transform: rotate(calc(45deg * var(--i)));
+    text-align: center;
+    font-size: 2em;
+    color: #00ffff;
+    font-weight: 500;
+    filter: drop-shadow(0 0 5px #00ffff);
+}
