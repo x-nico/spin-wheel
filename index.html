@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spin Wheel</title>
     <link rel="stylesheet" type="text/css" href="style.css"
-    <script src="/spin-wheel/main.js"></script>
 </head>
 <body>
     <div class="container">
@@ -45,5 +44,20 @@
             </div>
         </div>
     </div>
+    <script>
+        let wheel = document.querySelector('.wheel');
+        let inner = document.querySelector('.inner');
+        let spinBtn = document.querySelector('.spinBtn');
+
+        let value1 = Math.ceil(Math.random() * -3600);
+        let value2 = Math.ceil(Math.random() * 3600);
+
+        spinBtn.onclick = function(){
+            wheel.style.transform = "rotate("+ value1 +"deg)";
+            inner.style.transform = "rotate("+ value2 +"deg)";
+            value1 += Math.ceil(Math.random() * -3600);
+            value2 += Math.ceil(Math.random() * 3600);
+}
+    </script>
 </body>
 </html>
