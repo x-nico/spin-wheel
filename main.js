@@ -1,5 +1,5 @@
 let wheel = document.querySelector('.wheel');
-let inner = document.querySelector('.ineer');
+let inner = document.querySelector('.inner');
 let spinBtn = document.querySelector('.spinBtn');
 
 let value1 = Math.ceil(Math.random() * -3600);
