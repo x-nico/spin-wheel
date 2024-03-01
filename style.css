@@ -34,3 +34,13 @@ body {
     transition: transform 5s ease-in-out;
     overflow: hidden;
 }
+
+.wheel span {
+    position: absolute;
+    left: calc(50% - 1px);
+    width: 2px;
+    height: 100%;
+    background: #00ffff;
+    transform: rotate(calc(45deg * var(--i)));
+    filter: drop-shadow(0 0 5px #00ffff);
+}
