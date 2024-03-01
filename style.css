@@ -80,3 +80,12 @@ body {
     font-weight: 500;
     filter: drop-shadow(0 0 5px #00ffff);
 }
+
+.inner {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    background-color: #000000;
+    border: 3px solid #00ffff;
+    transition: transform 10s ease-in-out;
+}
